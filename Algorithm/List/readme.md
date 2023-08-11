@@ -40,7 +40,7 @@ insert 3 6\
 show\
 insert 1 8\
 show\
-get 2\
+get 2
 
 # 样例输出
 1 2 3\
@@ -63,4 +63,4 @@ insert OK\
 7 5 6 5\
 insert OK\
 8 7 5 6 5\
-7\
+7
