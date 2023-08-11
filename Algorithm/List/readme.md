@@ -26,41 +26,41 @@ show\
 delete 2\
 show\
 delete 1\
-show
-delete 2
-insert 2 5
-show
-insert 1 5
-show
-insert 1 7
-show
-insert 2 5
-show
-insert 3 6
-show
-insert 1 8
-show
-get 2
+show\
+delete 2\
+insert 2 5\
+show\
+insert 1 5\
+show\
+insert 1 7\
+show\
+insert 2 5\
+show\
+insert 3 6\
+show\
+insert 1 8\
+show\
+get 2\
 
 # 样例输出
-1 2 3
-delete OK
-2 3
-delete OK
-2
-delete OK
-Link list is empty
-delete fail
-insert fail
-Link list is empty
-insert OK
-5
-insert OK
-7 5
-insert OK
-7 5 5
-insert OK
-7 5 6 5
-insert OK
-8 7 5 6 5
-7
+1 2 3\
+delete OK\
+2 3\
+delete OK\
+2\
+delete OK\
+Link list is empty\
+delete fail\
+insert fail\
+Link list is empty\
+insert OK\
+5\
+insert OK\
+7 5\
+insert OK\
+7 5 5\
+insert OK\
+7 5 6 5\
+insert OK\
+8 7 5 6 5\
+7\
