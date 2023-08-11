@@ -18,14 +18,14 @@
 注：所有的双引号均不输出。
 
 # 样例输入
-3 3 2 1
-21
-show
-delete 1
-show
-delete 2
-show
-delete 1
+3 3 2 1 \
+21\
+show\
+delete 1\
+show\
+delete 2\
+show\
+delete 1\
 show
 delete 2
 insert 2 5
