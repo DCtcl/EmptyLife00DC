@@ -31,24 +31,29 @@ void addAtTail(int val) {
     _size++;
 }
 
+
 int addAtIndex(int index, int val) {
     /*
-    @Brief: 在第index个节点前，插入值为val的节点，其中索引值从1开始计数。
+    @Brief: 在第index个节点之前插入一个新节点，例如index为0，那么新插入的节点为链表的新头节点。
+            如果index 等于链表的长度，则说明是新插入的节点为链表的尾结点
+            如果index大于链表的长度，则返回空
+            如果index小于0，则在头部插入节点
+    @Param:
     */
-    if (index > _size || index <= 0) {
-        return -1;
-    }
-    ListNode* insertNode = new ListNode(val);
+
+    if (index > _size) return -1;
+    if (index < 0) return -1;
+    ListNode* newNode = new ListNode(val);
     ListNode* cur = _dummyhead;
-    index--;
     while (index--) {
         cur = cur->next;
     }
-    insertNode->next = cur->next;
-    cur->next = insertNode;
+    newNode->next = cur->next;
+    cur->next = newNode;
+    _size++;
     return 0;
-
 }
+
 
 int deleteAtIndex(int index) {
     /*
@@ -126,7 +131,7 @@ int main(){
             cin >> indexInsert;
             int valInsert;
             cin >> valInsert;
-            if (addAtIndex(indexInsert, valInsert) == -1) cout << "insert fail" << endl;
+            if (addAtIndex(indexInsert-1, valInsert) == -1) cout << "insert fail" << endl;
             else cout << "insert OK" << endl;
         }
 
@@ -141,4 +146,3 @@ int main(){
     }
     return 0;
 }
-
